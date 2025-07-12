@@ -93,6 +93,75 @@
         white-space: normal !important;
     }
 }
+
+/* Clase específica para "Movimiento Ciudadano" - Primera línea */
+.movimiento-ciudadano-title {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    font-size: 120px;
+    font-weight: 700;
+    color: #f6f6f6;
+}
+
+/* Clase específica para "Movimiento Ciudadano" - Segunda línea */
+.movimiento-ciudadano-segunda-linea {
+    position: absolute;
+    top: 90px; /* Espaciado entre las dos líneas */
+    left: 0;
+    font-size: 120px;
+    font-weight: 700;
+    color: #f6f6f6;
+}
+
+/* Media queries para ambas líneas de Movimiento Ciudadano */
+@media (max-width: 1199px) {
+    .movimiento-ciudadano-title {
+        font-size: 100px;
+        top: -15px;
+    }
+    
+    .movimiento-ciudadano-segunda-linea {
+        font-size: 100px;
+        top: 75px;
+    }
+}
+
+@media (max-width: 991px) {
+    .movimiento-ciudadano-title {
+        font-size: 80px;
+        top: -12px;
+    }
+    
+    .movimiento-ciudadano-segunda-linea {
+        font-size: 80px;
+        top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .movimiento-ciudadano-title {
+        font-size: 60px;
+        top: -10px;
+    }
+    
+    .movimiento-ciudadano-segunda-linea {
+        font-size: 60px;
+        top: 45px;
+    }
+}
+
+@media (max-width: 575px) {
+    .movimiento-ciudadano-title {
+        font-size: 45px;
+        top: -8px;
+    }
+    
+    .movimiento-ciudadano-segunda-linea {
+        font-size: 45px;
+        top: 35px;
+    }
+}
 </style>
 
 <link rel="shortcut icon" href="https://html.tonatheme.com/2021/Governlia/assets/images/favicon.png" type="image/x-icon">
@@ -582,12 +651,13 @@
         <div class="auto-container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="image"><img src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752346788/Diputado_Francisco_Farias_dz5rtu.jpg" alt="Diputado Francisco Javier Farías Bailón"></div>
+                    <div class="image"><img style="border-radius: 10px; height: 800px" src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752346788/Diputado_Francisco_Farias_dz5rtu.jpg" alt="Diputado Francisco Javier Farías Bailón"></div>
                 </div>
                 <div class="col-lg-7">
                     <div class="content-block pl-lg-5">
                         <div class="sec-title">
-                            <div class="big-title">Movimiento Ciudadano</div>
+                            <div class="movimiento-ciudadano-title">Movimiento</div>
+                            <div class="movimiento-ciudadano-segunda-linea">Ciudadano</div>
                             <div class="sub-title">Diputado Federal por Campeche</div>
                             <h2>Mensaje del Diputado</h2>
                         </div>
@@ -599,7 +669,10 @@
                                     <p>Como representante de Campeche en el Congreso de la Unión, mi compromiso es trabajar incansablemente por el desarrollo de nuestro estado. Desde Escárcega hasta cada rincón de Campeche, escucho las necesidades de la gente y las llevo al ámbito federal.</p>
                                     <p>Mi experiencia como Presidente Municipal de Candelaria y Regidor me ha enseñado que el verdadero cambio se logra trabajando de cerca con las comunidades, entendiendo sus problemas y buscando soluciones reales y efectivas.</p>
                                 </div>
+                                <!--Podemos omitir por el momento la firma ya que debemos de pedir el permido legar de usar la firma en la pagina
                                 <div class="sign"><img src="/placeholder.svg?height=80&width=200" alt="Firma Francisco Farías"></div>
+                                -->
+                                <div class="name">Francisco Javier Farías Bailón</div>
                                 <div class="designation">Diputado Federal</div>
                             </div>
                             <div class="col-lg-4">

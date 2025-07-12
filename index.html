@@ -281,18 +281,16 @@
                 </div>
                 <!-- Slide Item -->
                 <div class="swiper-slide">
-                    <div class="facebook-video-background">
-                        <iframe 
-                            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffranciscobbfariasmx%2Fvideos%2F1048104246902018%2F&show_text=false&autoplay=true&mute=true&loop=true" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:none;overflow:hidden;position:absolute;top:0;left:0;background:#000;" 
-                            scrolling="no" 
-                            frameborder="0" 
-                            allowfullscreen="true" 
-                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                            allowFullScreen="true">
-                        </iframe>
+                    <div class="cloudinary-video-background">
+                        <video 
+                            autoplay 
+                            muted 
+                            loop 
+                            playsinline
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; background: #000;">
+                            <source src="https://res.cloudinary.com/dmyejrbs7/video/upload/v1752304598/VID-20250712-WA0001_2_w2f9q3.mp4" type="video/mp4">
+                            Su navegador no soporta el elemento de video.
+                        </video>
                     </div>
                     <div class="content-outer">
                         <div class="content-box">
@@ -307,7 +305,7 @@
                         </div>
                     </div>
                     <style>
-                        .facebook-video-background {
+                        .cloudinary-video-background {
                             position: absolute;
                             width: 100%;
                             height: 100%;

@@ -162,6 +162,28 @@
         top: 35px;
     }
 }
+
+/* Filtro oscuro para imágenes de la sección Projects */
+.project-block .image img {
+    filter: brightness(0.60) contrast(1.1);
+    transition: filter 0.3s ease;
+}
+
+/* Al hacer hover, restaurar el brillo original */
+.project-block .inner-box:hover .image img {
+    filter: brightness(1) contrast(1);
+}
+
+/* Media query para mobile - filtro más oscuro para mejor contraste */
+@media (max-width: 767px) {
+    .project-block .image img {
+        filter: brightness(0.6) contrast(1.2);
+    }
+    
+    .project-block .inner-box:hover .image img {
+        filter: brightness(0.85) contrast(1.1);
+    }
+}
 </style>
 
 <link rel="shortcut icon" href="https://html.tonatheme.com/2021/Governlia/assets/images/favicon.png" type="image/x-icon">
@@ -750,7 +772,7 @@
                             <div class="content-two">
                                 <h4>Cultura Local</h4>
                                 <h3>Artesanos de Tepakán</h3>
-                                <div class="text">Promoción y apoyo al talento artesanal <br> de nuestras comunidades...</div>
+                                <div class="text">Promoción y apoyo al talento artesanal de nuestras comunidades...</div>
                                 <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
                             </div>
                         </div>
@@ -758,7 +780,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 project-block">
                     <div class="inner-box">
-                        <div class="image"><img src="/placeholder.svg?height=300&width=300" alt="Gestión ciudadana"></div>
+                        <div class="image"><img style="height: 340px;" src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752357187/Gestion_Ciudadana_redvym.jpg" alt="Gestión ciudadana"></div>
                         <div class="content">
                             <h4>Gestión Ciudadana</h4>
                             <h3>Atención Directa</h3>
@@ -776,7 +798,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-6 project-block">
                     <div class="inner-box">
-                        <div class="image"><img src="/placeholder.svg?height=300&width=300" alt="Recorridos comunitarios"></div>
+                        <div class="image"><img style="height: 340px;" src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752357424/Recorridos_Comunitarios_ynymgd.jpg" alt="Recorridos comunitarios"></div>
                         <div class="content">
                             <h4>Trabajo de Campo</h4>
                             <h3>Recorridos Comunitarios</h3>
@@ -786,7 +808,7 @@
                             <div class="content-two">
                                 <h4>Trabajo de Campo</h4>
                                 <h3>Recorridos Comunitarios</h3>
-                                <div class="text">Visitando cada comunidad para conocer <br> de primera mano sus necesidades...</div>
+                                <div class="text">Visitando cada comunidad para conocer de primera mano sus necesidades...</div>
                                 <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
                             </div>
                         </div>

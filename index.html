@@ -184,6 +184,65 @@
         filter: brightness(0.85) contrast(1.1);
     }
 }
+
+/* Estilos adicionales para la sección de video */
+.video-section {
+    min-height: 500px !important;
+    background-attachment: fixed !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.video-section .auto-container {
+    position: relative;
+    z-index: 2;
+}
+
+.video-section .video-btn a {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 3px solid rgba(255, 255, 255, 0.6) !important;
+    transition: all 0.3s ease !important;
+}
+
+.video-section .video-btn a:hover {
+    background-color: #034997 !important;
+    border-color: #034997 !important;
+    transform: scale(1.1) !important;
+}
+
+.video-section .video-btn a span {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+/* Media queries para video section responsive */
+@media (max-width: 767px) {
+    .video-section {
+        background-attachment: scroll !important;
+        min-height: 400px !important;
+        padding: 80px 0 !important;
+    }
+    
+    .video-section h2 {
+        font-size: 36px !important;
+        line-height: 42px !important;
+    }
+    
+    .video-section .text {
+        font-size: 18px !important;
+        margin: 0 20px !important;
+    }
+    
+    .video-section .video-btn a {
+        width: 80px !important;
+        height: 80px !important;
+        line-height: 70px !important;
+        font-size: 20px !important;
+    }
+}
 </style>
 
 <link rel="shortcut icon" href="https://html.tonatheme.com/2021/Governlia/assets/images/favicon.png" type="image/x-icon">
@@ -923,11 +982,15 @@
     </section>
 
     <!-- Video section -->
-    <section class="video-section" style="background-image: url(/placeholder.svg?height=500&width=1200);">
+    <section class="video-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/dmyejrbs7/image/upload/v1752355998/Artesanos_de_Tepekan_Foto_q4eomi.png);">
         <div class="auto-container">
             <h2><strong>Conoce el Talento</strong> <br> de Tepakán y Nuestras Tradiciones</h2>
             <div class="text">El talento de Tepakán no necesita filtros, solo necesita ser visto, valorado y apoyado</div>
-            <div class="video-btn"><a href="https://www.youtube.com/watch?v=nfP5N9Yc72A&amp;t=28s" class="overlay-link play-now ripple" data-fancybox="gallery" data-caption=""><span class="fas fa-play"></span> </a></div>
+            <div class="video-btn">
+                <a href="https://res.cloudinary.com/dmyejrbs7/video/upload/v1752304598/VID-20250712-WA0001_2_w2f9q3.mp4" class="overlay-link play-now ripple" data-fancybox="gallery" data-caption="">
+                    <span class="fas fa-play"></span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -999,65 +1062,6 @@
                                     <span class="fas fa-star"></span>
                                     <span class="fas fa-star"></span>
                                     <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                    <span class="fas fa-star"></span>
-                                </div>
-                                <div class="quote"><span class="icon-quote"></span></div>
-                                <div class="shape"><svg 
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="92px" height="36px">
-                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                                    d="M-0.000,-0.002 L46.000,35.999 L92.000,-0.002 L-0.000,-0.002 Z"/>
-                                </svg></div>
-                            </div>
-                            <div class="author">
-                                <div class="thumb"><img src="/placeholder.svg?height=80&width=80" alt="Trabajador petrolero"></div>
-                                <h4>Roberto Jiménez</h4>
-                                <div class="designation">Trabajador Petrolero</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Info section -->
-    <section class="contact-info-section" id="contacto">
-        <div class="auto-container">
-            <div class="wrapper-box" style="background-image: url(/placeholder.svg?height=400&width=1200);">
-                <div class="top-content">
-                    <h2>Para Gestiones y Atención Ciudadana</h2>
-                    <div class="text">Como su Diputado Federal, estoy aquí para escuchar sus necesidades y trabajar <br> por el desarrollo de Campeche desde el Congreso de la Unión</div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 contact-info-block">
-                        <div class="inner-box">
-                            <div class="icon"><span class="pe-7s-call"></span></div>
-                            <h5>Llámanos</h5>
-                            <h4><a href="tel:9811234567">981-123-4567</a></h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 contact-info-block">
-                        <div class="inner-box">
-                            <div class="icon"><span class="pe-7s-mail-open"></span></div>
-                            <h5>Enviar Email</h5>
-                            <h4><a href="mailto:francisco.farias@diputados.gob.mx">francisco.farias@diputados.gob.mx</a></h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 contact-info-block">
-                        <div class="inner-box">
-                            <div class="icon"><span class="pe-7s-headphones"></span></div>
-                            <h5>Redes Sociales</h5>
-                            <h4>@FranciscoFarias</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 contact-info-block">
-                        <div class="inner-box">
-                            <div class="icon"><span class="pe-7s-stopwatch"></span></div>
-                            <h5>Horarios de Atención</h5>
-                            <h4>0900am - 0600pm</h4>
                         </div>
                     </div>
                 </div>

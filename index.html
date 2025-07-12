@@ -21,6 +21,50 @@
     white-space: nowrap !important;
 }
 
+/* Clase específica para la segunda línea del título "Legislativo" */
+.trabajo-legislativo-segunda-linea {
+    top: 160px !important; /* Más separación entre las líneas */
+    letter-spacing: 0.02em !important; /* Espaciado más elegante */
+}
+
+/* Ajuste del espaciado del subtítulo cuando hay dos líneas de big-title */
+.city-program-section .sec-title .sub-title {
+    margin-top: 60px !important; /* Más espacio después de las dos líneas */
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .trabajo-legislativo-segunda-linea {
+        top: 130px !important;
+    }
+    
+    .city-program-section .sec-title .sub-title {
+        margin-top: 50px !important;
+    }
+}
+
+/* Para tablets en orientación vertical */
+@media (max-width: 991px) and (min-width: 768px) {
+    .trabajo-legislativo-segunda-linea {
+        top: 110px !important;
+    }
+    
+    .city-program-section .sec-title .sub-title {
+        margin-top: 40px !important;
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 767px) {
+    .trabajo-legislativo-segunda-linea {
+        top: 80px !important;
+    }
+    
+    .city-program-section .sec-title .sub-title {
+        margin-top: 30px !important;
+    }
+}
+
 /* Media queries para pantallas medianas (tablets y laptops pequeñas) */
 @media (max-width: 1199px) and (min-width: 768px) {
     .fixed-name-spacing {
@@ -233,7 +277,7 @@
         <div class="swiper-container banner-slider">
             <div class="swiper-wrapper">
                 <!-- Slide Item -->
-                <div class="swiper-slide" style="background-image: url(https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/494088505_1252616420199059_6690916364442567262_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Yp9nX5nm5dAQ7kNvwEycU_x&_nc_oc=Adm8Er1I__2hqNiuhRWt4hfBhnc66QGMFx5iTvco5VWSbWvz3Pwx4rnDpFIVR5x9ZNa21YufTMEoEShr1xPBlfaW&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=ID-kg8vp2w-ZvalN8sJElg&oh=00_AfTZao6HZvMgw-Z7zSeUP-PBPZLZCwj7dn59HCo6WQlp7Q&oe=687799D9);">
+                <div class="swiper-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://scontent.fisj3-3.fna.fbcdn.net/v/t39.30808-6/494088505_1252616420199059_6690916364442567262_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Yp9nX5nm5dAQ7kNvwEycU_x&_nc_oc=Adm8Er1I__2hqNiuhRWt4hfBhnc66QGMFx5iTvco5VWSbWvz3Pwx4rnDpFIVR5x9ZNa21YufTMEoEShr1xPBlfaW&_nc_zt=23&_nc_ht=scontent.fisj3-3.fna&_nc_gid=ID-kg8vp2w-ZvalN8sJElg&oh=00_AfTZao6HZvMgw-Z7zSeUP-PBPZLZCwj7dn59HCo6WQlp7Q&oe=687799D9);">
                     <div class="content-outer">
                         <div class="content-box justify-content-center">
                             <div class="inner text-center">
@@ -355,7 +399,7 @@
                     <div class="image-block wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="row">
                             <div class="col-lg-6 column">
-                                <div class="image"><img src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752299307/Trabajo-comunitario_pf2kzn.jpg" alt="Francisco Farías en trabajo comunitario"></div>
+                                <div class="image"><img style="border-radius: 8px;" src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752299307/Trabajo-comunitario_pf2kzn.jpg" alt="Francisco Farías en trabajo comunitario"></div>
                                 <div class="video-container" style="margin-top: 20px;">
                                     <video autoplay muted loop playsinline style="width: 205%; height: 250px; object-fit: cover; border-radius: 8px;">
                                         <source src="https://res.cloudinary.com/dmyejrbs7/video/upload/v1752304598/VID-20250712-WA0001_2_w2f9q3.mp4" type="video/mp4">
@@ -364,7 +408,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 column">
-                                <div class="image"><img src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752299934/En_el_congreso_yu1ehu.jpg" alt="Francisco Farías en el Congreso"></div>
+                                <div class="image"><img style="border-radius: 8px;" src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752299934/En_el_congreso_yu1ehu.jpg" alt="Francisco Farías en el Congreso"></div>
                             </div>
                         </div>
                     </div>
@@ -374,7 +418,7 @@
     </section>
 
     <!-- Funfacts Section -->
-    <section class="funfacts-section" style="background-image: url(/placeholder.svg?height=400&width=1200);">
+    <section class="funfacts-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://res.cloudinary.com/dmyejrbs7/image/upload/v1752346216/Trabajo_ok7jwf.jpg);">
         <div class="auto-container">
             <div class="row">
                 <!--Column-->
@@ -427,7 +471,8 @@
     <section class="city-program-section" id="trabajo" style="background-image: url(/placeholder.svg?height=600&width=1200);">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <div class="big-title">Trabajo Legislativo</div>
+                <div class="big-title">Trabajo</div>
+                <div class="big-title trabajo-legislativo-segunda-linea">Legislativo</div>
                 <div class="sub-title">Diputado Federal - Movimiento Ciudadano</div>
                 <h2>Principales Áreas de Trabajo</h2>
             </div>
@@ -537,7 +582,7 @@
         <div class="auto-container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="image"><img src="/placeholder.svg?height=500&width=400" alt="Diputado Francisco Javier Farías Bailón"></div>
+                    <div class="image"><img src="https://res.cloudinary.com/dmyejrbs7/image/upload/v1752346788/Diputado_Francisco_Farias_dz5rtu.jpg" alt="Diputado Francisco Javier Farías Bailón"></div>
                 </div>
                 <div class="col-lg-7">
                     <div class="content-block pl-lg-5">

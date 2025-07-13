@@ -1081,8 +1081,16 @@
                 <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "center": false, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "992" :{ "items" : "2" } , "1200":{ "items" : "3" }, "1600":{ "items" : "4" }}}'>
                     <div class="col-xl-12 news-block">
                         <div class="inner-box">
-                            <div class="image">
-                                <img src="/placeholder.svg?height=250&width=300" alt="Iniciativa energética">
+                            <div class="image" style="height: 190px; overflow: hidden; position: relative;">
+                                <iframe 
+                                    width="100%" 
+                                    height="100%" 
+                                    src="https://www.youtube.com/embed/u_tHUwnu538?autoplay=1&mute=1" 
+                                    title="YouTube video player" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen>
+                                </iframe>
                                 <div class="overlay">
                                     <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
                                 </div>
@@ -1090,7 +1098,7 @@
                             <div class="lower-content">
                                 <div class="category"><a href="#">Energía</a></div>
                                 <h4><a href="#">Presenta Iniciativa para <br> Trabajadores Petroleros</a></h4>
-                                <div class="text">Nueva propuesta para mejorar las condiciones laborales en plataformas petroleras...</div>
+                                <div class="text">Propuesta para mejorar las condiciones laborales en plataformas petroleras...</div>
                                 <ul class="post-meta">
                                     <li><i class="far fa-user"></i>Francisco Farías</li>
                                     <li><i class="far fa-calendar"></i>Nov 5, 2024</li>
@@ -1101,8 +1109,16 @@
                     </div>
                     <div class="col-xl-12 news-block">
                         <div class="inner-box">
-                            <div class="image">
-                                <img src="/placeholder.svg?height=250&width=300" alt="Apoyo artesanos">
+                            <div class="image" style="height: 190px; overflow: hidden; position: relative;">
+                                <video 
+                                    autoplay 
+                                    muted 
+                                    loop 
+                                    playsinline
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                                    <source src="https://res.cloudinary.com/dmyejrbs7/video/upload/v1752304598/VID-20250712-WA0001_2_w2f9q3.mp4" type="video/mp4">
+                                    Su navegador no soporta el elemento de video.
+                                </video>
                                 <div class="overlay">
                                     <div class="link-btn"><a href="#"><i class="icon-arrow"></i></a></div>
                                 </div>
@@ -1164,15 +1180,118 @@
         </div>
     </section>
 
+    <style>
+        /* Estilos profesionales para la sección de logos */
+.brand-logo-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.brand-logo-section .single-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 120px !important;
+    padding: 20px !important;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.brand-logo-section .single-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand-logo-section .single-logo img {
+    max-height: 80px !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+    filter: grayscale(0.3) opacity(0.8);
+    transition: filter 0.3s ease;
+    margin: 0 !important;
+}
+
+.brand-logo-section .single-logo:hover img {
+    filter: grayscale(0) opacity(1);
+}
+
+/* Logo específico para Movimiento Ciudadano (más pequeño) */
+.brand-logo-section .logo-movimiento img {
+    max-height: 70px !important;
+}
+
+/* Logo específico para Congreso (más pequeño) */
+.brand-logo-section .logo-congreso img {
+    max-height: 60px !important;
+}
+
+/* Logo específico para Cámara de Diputados */
+.brand-logo-section .logo-camara img {
+    max-height: 65px !important;
+}
+
+/* Logo específico para Gobierno de Campeche */
+.brand-logo-section .logo-gobierno img {
+    max-height: 75px !important;
+}
+
+/* Logo específico para Escárcega */
+.brand-logo-section .logo-escarcega img {
+    max-height: 70px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .brand-logo-section .single-logo {
+        height: 100px !important;
+        margin: 8px;
+    }
+    
+    .brand-logo-section .single-logo img {
+        max-height: 60px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-logo-section {
+        padding: 40px 0;
+    }
+    
+    .brand-logo-section .single-logo {
+        height: 80px !important;
+        margin: 5px;
+    }
+    
+    .brand-logo-section .single-logo img {
+        max-height: 50px !important;
+    }
+}
+    </style>
+
     <!-- Brand Logo section -->
     <section class="brand-logo-section">
         <div class="auto-container">
-            <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "center": false, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "4" } , "992":{ "items" : "5" }, "1200":{ "items" : "5" }}}'>
-                <div class="single-logo"><img src="/placeholder.svg?height=80&width=150" alt="Movimiento Ciudadano"></div>
-                <div class="single-logo"><img src="/placeholder.svg?height=80&width=150" alt="Cámara de Diputados"></div>
-                <div class="single-logo"><img src="/placeholder.svg?height=80&width=150" alt="Gobierno de Campeche"></div>
-                <div class="single-logo"><img src="/placeholder.svg?height=80&width=150" alt="Municipio de Escárcega"></div>
-                <div class="single-logo"><img src="/placeholder.svg?height=80&width=150" alt="Congreso de la Unión"></div>
+            <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "center": false, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "3" } , "992":{ "items" : "4" }, "1200":{ "items" : "5" }}}'>
+                <div class="single-logo logo-movimiento">
+                    <img src="https://movimientociudadanocdmx.org/wp-content/uploads/2017/03/logo-180-x-180-01.png" alt="Movimiento Ciudadano">
+                </div>
+                <div class="single-logo logo-camara">
+                    <img src="https://portalhcd.diputados.gob.mx/PortalWeb/Legislatura/Logo/e3c79e60-05f0-423b-bc1b-561400c3365d.png" alt="Cámara de Diputados">
+                </div>
+                <div class="single-logo logo-gobierno">
+                    <img src="https://campeche.gob.mx/wp-content/uploads/2023/04/logoh.png" alt="Gobierno de Campeche">
+                </div>
+                <div class="single-logo logo-escarcega">
+                    <img src="https://www.escarcega.gob.mx/logo-2.png" alt="Municipio de Escárcega">
+                </div>
+                <div class="single-logo logo-congreso">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Coat_of_arms_of_the_Mexico_City_Congress.svg/330px-Coat_of_arms_of_the_Mexico_City_Congress.svg.png" alt="Congreso de la Unión">
+                </div>
             </div>
         </div>
     </section>
@@ -1291,11 +1410,13 @@
         <!-- Footer Bottom -->
         <div class="footer-bottom">
             <div class="auto-container">
-                <div class="wrapper-box">
-                    <div class="copyright">
-                        <div class="text">© 2025 <a href="#">Dip. Francisco Javier Farías Bailón</a> - Diputado Federal por Campeche. Todos los derechos reservados.</div>
-                    </div>
+            <div class="wrapper-box">
+                <div class="copyright"></div>
+                <div class="text">© 2025 <a href="#">Dip. Francisco Javier Farías Bailón</a> - Diputado Federal por Campeche. Todos los derechos reservados.</div>
+                <div style="text-align: center; width: 100%; margin-top: 10px; color: #999;">
+                    <span>Desarrollado por</span> <a href="https://jarbssolutions.com" target="_blank" style="font-weight:bold; color: #999; text-decoration: none; transition: color 0.3s ease;">JARB's Solutions</a>
                 </div>
+            </div>
             </div>
         </div>
     </footer>

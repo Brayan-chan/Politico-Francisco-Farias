@@ -3619,7 +3619,7 @@ img {
 
 .testimonial-block .thumb img {
     border-radius: 50%;
-    width: auto;
+    width: 80px;
     margin: 0 auto;
 }
 
@@ -6495,5 +6495,9 @@ blockquote cite {
 
     .image-diputado img {
         max-height: 550px;
+    }
+
+    .new-4-img {
+        max-height: 178px;
     }
 } 
